@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/oda.css">
         <title>小田有梨沙</title>
-        <script type="text/javascript" src="oda.js"></script>
+        <script type="text/javascript" src="js/oda.js"></script>
     </head>
     <body>
         <h1>小田　有梨沙</h1>
         <h2>主な趣味</h2>
-        <h3>絵を描くこと</h3>
+        <h3 onclick="btnpic()">絵を描くこと</h3>
+        <p>
+            上をクリックすると詳細が見れます
+        </p>
         <div id="picture">
         <img src="./それぞれの画像置き場/Hika.png">
         <p>
@@ -57,5 +60,16 @@
             <li><a href="https://cinderella.idolmaster.jp/sl-stage/">デレステ</a></li>
         </ul>
         <p><a href="index.html">目次へ戻る</a></p>
+        <script>
+            document.getElementById("picture").style.display="none";
+            function btnpic(){
+                const picture = document.getElementById("picture");
+                if(picture.style.displa=="block"){
+                    picture.style.display="none";
+                }else{
+                    picture.style.display="block";
+                }
+            }
+        </script>
     </body>
 </html>
