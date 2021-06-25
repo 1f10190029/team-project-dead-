@@ -10,7 +10,7 @@
         <h1>小田　有梨沙</h1>
         <h2>主な趣味</h2>
         <h3 onclick="btnpic()">絵を描くこと</h3>
-        <p>
+        <p class="k">
             上をクリックすると詳細が見れます
         </p>
         <div id="picture">
@@ -28,7 +28,11 @@
             <li>vtuberやアニメキャラ(その他)</li>
         </ul>
         </div>
-        <h3>音楽鑑賞</h3>
+        <h3 onclick="btnmic()">音楽鑑賞</h3>
+        <p class="k">
+            上をクリックすると詳細が見れます
+        </p>
+        <div id="music">
         <p>
             流行りの曲から昔の曲まで興味があれば聴いている<br>
             基本的には邦楽がほとんどだが洋楽も好き<br>
@@ -39,7 +43,12 @@
             <li><a href="https://www.taniyamahiroko.com/">谷山浩子</a></li>
             <li>倉橋ヨエコ</li>
         </ul>
-        <h2>アニメ鑑賞</h2>
+        </div>
+        <h3 onclick="btnanm()">アニメ鑑賞</h3>
+        <p class="k">
+            上をクリックすると詳細が見れます
+        </p>
+        <div id="anime">
         <p>
             日常物やファンタジー物が好き<br>
             テレビで見るよりもネットで見る方が多い
@@ -49,7 +58,12 @@
             <li><a href="http://shinonome-lab.com/">日常</a></li>
             <li><a href="https://osomatsusan.com/">おそ松さん</a></li>
         </ul>
-        <h3>ゲーム</h3>
+        </div>
+        <h3 onclick="btngm()">ゲーム</h3>
+        <p class="k">
+            上をクリックすると詳細が見れます
+        </p>
+        <div id="game">
         <p>
             難しすぎないRPGや育成ゲームが好き<br>
             最近は音ゲー、リズムゲームを中心に遊んでいる
@@ -59,11 +73,39 @@
             <li><a href="https://www.dragonquest.jp/">ドラクエ</a></li>
             <li><a href="https://cinderella.idolmaster.jp/sl-stage/">デレステ</a></li>
         </ul>
+        </div>
         <p><a href="index.html">目次へ戻る</a></p>
         <script>
             document.getElementById("picture").style.display="none";
             function btnpic(){
                 const picture = document.getElementById("picture");
+                if(picture.style.displa=="block"){
+                    picture.style.display="none";
+                }else{
+                    picture.style.display="block";
+                }
+            }
+            document.getElementById("music").style.display="none";
+            function btnmic(){
+                const picture = document.getElementById("music");
+                if(picture.style.displa=="block"){
+                    picture.style.display="none";
+                }else{
+                    picture.style.display="block";
+                }
+            }
+            document.getElementById("anime").style.display="none";
+            function btnanm(){
+                const picture = document.getElementById("anime");
+                if(picture.style.displa=="block"){
+                    picture.style.display="none";
+                }else{
+                    picture.style.display="block";
+                }
+            }
+            document.getElementById("game").style.display="none";
+            function btngm(){
+                const picture = document.getElementById("game");
                 if(picture.style.displa=="block"){
                     picture.style.display="none";
                 }else{
