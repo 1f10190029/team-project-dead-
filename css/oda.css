@@ -8,6 +8,10 @@ h1{
 .con{
     background-color:white;
 }
+h2{
+
+    text-decoration:underline;
+}
 body {
     background: linear-gradient(#b2f4ff,#a1e7ff,#4fb5ff);
   }
