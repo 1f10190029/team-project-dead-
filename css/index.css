@@ -27,7 +27,7 @@ h2:before {
   content: '';
   border-width: 32px 30px 32px 0;
   border-style: solid;
-  border-color: transparent #d4f51c transparent transparent;
+  border-color: transparent #97e84f transparent transparent;
 }
 
 h2:after {
