@@ -9,6 +9,11 @@ h1{
     border-color:blue;
     color:#0019ff;
 }
+ol{
+    background-color:white;
+    padding: 1rem 2rem;
+    display: block;
+}
 .con{
     background-color:white;
 }
@@ -21,4 +26,12 @@ body {
   }
 .k{
     opacity: 0.5;
+}
+#Up{
+    background-color:white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    position: fixed;
+    right:10px;
+    bottom:20px;
 }

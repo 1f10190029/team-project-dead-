@@ -7,9 +7,15 @@
         <script type="text/javascript" src="js/oda.js"></script>
     </head>
     <body>
-        <h1>小田　有梨沙</h1>
+        <h1 id="Top">小田　有梨沙</h1>
+        <ol>
+            <li><a href="#one">絵を描くこと</a></li>
+            <li><a href="#two">音楽鑑賞</a></li>
+            <li><a href="#three">アニメ鑑賞</a></li>
+            <li><a href="#four">ゲーム</a></li>
+        </ol>
         <h2>趣味</h2>
-        <h3 onclick="btnpic()">絵を描くこと</h3>
+        <h3 onclick="btnpic()" id="one">絵を描くこと</h3>
         <p class="k">
             上をクリックすると詳細が見れます
         </p>
@@ -30,7 +36,7 @@
         </ul>
         </div>
         </div>
-        <h3 onclick="btnmic()">音楽鑑賞</h3>
+        <h3 onclick="btnmic()" id="two">音楽鑑賞</h3>
         <p class="k">
             上をクリックすると詳細が見れます
         </p>
@@ -46,7 +52,7 @@
             <li>倉橋ヨエコ</li>
         </ul>
         </div>
-        <h3 onclick="btnanm()">アニメ鑑賞</h3>
+        <h3 onclick="btnanm()" id="three">アニメ鑑賞</h3>
         <p class="k">
             上をクリックすると詳細が見れます
         </p>
@@ -61,7 +67,7 @@
             <li><a href="https://osomatsusan.com/">おそ松さん</a></li>
         </ul>
         </div>
-        <h3 onclick="btngm()">ゲーム</h3>
+        <h3 onclick="btngm()" id="four">ゲーム</h3>
         <p class="k">
             上をクリックすると詳細が見れます
         </p>
@@ -77,6 +83,9 @@
         </ul>
         </div>
         <p><a href="index.html">目次へ戻る</a></p>
+        <p id="Up">
+            <a href="#Top">上へ移動</a>
+        </p>
         <script>
             document.getElementById("picture").style.display="none";
             function btnpic(){
