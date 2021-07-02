@@ -34,4 +34,6 @@ body {
     position: fixed;
     right:10px;
     bottom:20px;
+    border: 2px solid;
+    border-color:blue;
 }
